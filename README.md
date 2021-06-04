@@ -51,7 +51,7 @@ All available APIs are followings.
 
 
 ## Tips
-### Hashie::Mash
+### Dry::Struct
 All successful API methods returns `Dry::Struct` [instance](lib/treasury_prime/responses) wrapped in Success monad.
 
 https://github.com/dry-rb/dry-struct
