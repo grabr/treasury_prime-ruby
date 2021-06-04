@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.sandbox.treasuryprime.com/apply/person_application
+    body:
+      encoding: UTF-8
+      string: '{"citizenship":"US","date_of_birth":"1932-02-22","email_address":"test@example.com","first_name":"John","last_name":"Doe","phone_number":"2025551111","physical_address":{"street_line_1":"1600
+        Pennsylvania Ave","city":"Washington","state":"DC","postal_code":"20500"}}'
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jun 2021 22:46:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '578'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"first_name":"John","secondary_email_address":null,"bankdata":null,"phone_number":"+1
+        202-555-1111","mailing_address":null,"occupation":null,"physical_address":{"street_line_1":"1600
+        Pennsylvania Ave","street_line_2":null,"city":"Washington","state":"DC","postal_code":"20500"},"person_id":null,"middle_name":null,"updated_at":"2021-06-03T22:46:51Z","gov_id":null,"document_ids":[],"id":"apsn_11gbjpyv2kxj6z","citizenship":"US","date_of_birth":"1932-02-22","last_name":"Doe","user_id":null,"email_address":"test@example.com","created_at":"2021-06-03T22:46:51Z","userdata":null}'
+  recorded_at: Thu, 03 Jun 2021 22:46:51 GMT
+recorded_with: VCR 6.0.0

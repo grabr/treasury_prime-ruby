@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.sandbox.treasuryprime.com/apply/person_application
+    body:
+      encoding: UTF-8
+      string: '{"citizenship":"US","date_of_birth":"1732-02-22","email_address":"test@example.com","first_name":"John","last_name":"Doe","phone_number":"2025551111","physical_address":{"street_line_1":"1600
+        Pennsylvania Ave","city":"Washington","state":"DC","postal_code":"20500"}}'
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 03 Jun 2021 22:45:47 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '96'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"error":"Invalid date of birth: must be less than 130 years of age.
+        date_of_birth: 1732-02-22"}'
+  recorded_at: Thu, 03 Jun 2021 22:45:46 GMT
+recorded_with: VCR 6.0.0

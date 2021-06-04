@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/person/psn_11gbjqeg2kxkgv
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jun 2021 23:46:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '595'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"suffix":null,"address":{"street_line_1":"1600 Pennsylvania Ave","street_line_2":null,"city":"Washington","state":"DC","postal_code":"20500"},"email":"test@example.com","first_name":"John","bankdata":{"cif":null},"phone_number":"+1
+        202-555-1111","mailing_address":null,"physical_address":{"street_line_1":"1600
+        Pennsylvania Ave","street_line_2":null,"city":"Washington","state":"DC","postal_code":"20500"},"middle_name":null,"updated_at":"2021-06-03T22:55:12Z","tin_last4":"","account_ids":["acct_11gbjqeg2kxkgs"],"id":"psn_11gbjqeg2kxkgv","last_name":"Doe","created_at":"2021-06-03T22:55:12Z"}'
+  recorded_at: Thu, 03 Jun 2021 23:46:53 GMT
+recorded_with: VCR 6.0.0

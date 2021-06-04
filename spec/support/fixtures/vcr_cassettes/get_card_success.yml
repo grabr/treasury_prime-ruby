@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/card/card_11gbjw992ky5ht
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Jun 2021 00:33:04 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '337'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"cvv":null,"account_id":"acct_11gbjqeg2kxkgs","pan":"111111______9244","expiration":"0625","person_id":"psn_11gbjqeg2kxkgv","last4":"9244","card_product_id":"cdpt_11ga8jrv2hfe90","updated_at":"2021-06-04T00:17:47Z","status":"unactivated","id":"card_11gbjw992ky5ht","pin_is_set":false,"created_at":"2021-06-04T00:17:45Z","userdata":null}'
+  recorded_at: Fri, 04 Jun 2021 00:33:04 GMT
+recorded_with: VCR 6.0.0

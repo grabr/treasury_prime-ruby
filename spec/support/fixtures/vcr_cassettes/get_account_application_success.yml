@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/apply/account_application/aact_11gbjqe62kxkfp
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jun 2021 23:09:19 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '450'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"bankdata":null,"primary_person_application_id":"apsn_11gbjpyv2kxj6z","business_application_id":null,"account_id":"acct_11gbjqeg2kxkgs","updated_at":"2021-06-03T22:55:22Z","product":"personal_savings","status":"approved","account_number":"137000055933","id":"aact_11gbjqe62kxkfp","deposit_id":null,"ownership_type":"personal","person_applications":[{"id":"apsn_11gbjpyv2kxj6z","roles":["owner"]}],"created_at":"2021-06-03T22:55:02Z","userdata":null}'
+  recorded_at: Thu, 03 Jun 2021 23:09:18 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "treasury_prime"
+require "dotenv"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+Dotenv.load
+TreasuryPrime.debug_logger = Logger.new(STDOUT)
+
+@client = TreasuryPrime::Client.new(username: ENV["USERNAME"], token: ENV["TOKEN"], api_base: ENV["API_BASE"])
+
+require "irb"
+IRB.start

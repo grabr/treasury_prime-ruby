@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/account/acct_11gbjqeg2kxkgs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Jun 2021 23:40:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '595'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"address":{"street_line_1":"1600 Pennsylvania Ave","street_line_2":null,"city":"Washington","state":"DC","postal_code":"20500"},"account_type":"savings","bank_id":"bank_treasuryprime","person_ids":["psn_11gbjqeg2kxkgv"],"available_balance":"5000.00","name":"John
+        Doe","updated_at":"2021-06-03T22:55:17Z","currency":"USD","routing_number":"000000000","status":"open","primary_person_id":"psn_11gbjqeg2kxkgv","account_number":"137000055933","locked":false,"id":"acct_11gbjqeg2kxkgs","funded":false,"business_ids":[],"current_balance":"5000.00","created_at":"2021-06-03T22:55:12Z","userdata":null}'
+  recorded_at: Thu, 03 Jun 2021 23:40:24 GMT
+recorded_with: VCR 6.0.0
