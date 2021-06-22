@@ -6,6 +6,7 @@ module TreasuryPrime
     autoload :PersonMethods,                "treasury_prime/client/person_methods"
     autoload :CardMethods,                  "treasury_prime/client/card_methods"
     autoload :CardProductMethods,           "treasury_prime/client/card_product_methods"
+    autoload :TransactionMethods,           "treasury_prime/client/transaction_methods"
 
     include AccountMethods
     include PersonMethods
@@ -13,7 +14,7 @@ module TreasuryPrime
     include CardProductMethods
     include AccountApplicationMethods
     include PersonApplicationMethods
-
+    include TransactionMethods
 
     include Dry::Monads[:result]
 

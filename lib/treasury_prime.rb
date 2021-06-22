@@ -19,6 +19,7 @@ module TreasuryPrime
   autoload :Person,                     "treasury_prime/responses/person"
   autoload :CardProduct,                "treasury_prime/responses/card_product"
   autoload :Card,                       "treasury_prime/responses/card"
+  autoload :Transaction,                "treasury_prime/responses/transaction"
 
   autoload :BaseClient,                 "treasury_prime/base_client"
   autoload :Client,                     "treasury_prime/client"
@@ -28,7 +29,6 @@ module TreasuryPrime
   @api_base = "https://api.treasuryprime.com/"
 
   class << self
-
     attr_accessor :api_base, :username, :token, :debug_logger
 
     def client
@@ -38,6 +38,5 @@ module TreasuryPrime
         token: TreasuryPrime.token
       )
     end
-
   end
 end

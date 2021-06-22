@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/account/acct_11gbjqeg2kxkgs/transaction
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jun 2021 18:22:39 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '359'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"check_id":null,"type_source":null,"amount":"5000.00","date":"2021-06-03","wire_id":null,"desc":"Initial
+        funding","wire":null,"book_id":null,"type":"deposit","summary":null,"balance":"5000.00","billpay_payment_id":null,"id":"ttx_11gbjqem2kxkhh","trace_id":null,"ach_id":null,"fingerprint":"ttx_11gbjqem2kxkhh","check_number":null}],"page_next":null}'
+  recorded_at: Tue, 22 Jun 2021 18:22:39 GMT
+recorded_with: VCR 6.0.0

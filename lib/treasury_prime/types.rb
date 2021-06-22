@@ -12,6 +12,5 @@ module TreasuryPrime
 
     Email = String.constrained(format: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
     Currency = String.constrained(eql: "USD")
-
   end
 end
