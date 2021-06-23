@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "treasury_prime/version"
@@ -39,7 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "faraday", ">= 1.0.0"
   spec.add_dependency "faraday_curl"
   spec.add_dependency "faraday_middleware"
-  spec.add_dependency "hashie"
   spec.add_dependency "dry-struct"
   spec.add_dependency "dry-monads"
 
