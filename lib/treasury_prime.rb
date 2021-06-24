@@ -20,6 +20,7 @@ module TreasuryPrime
   autoload :CardProduct,                "treasury_prime/responses/card_product"
   autoload :Card,                       "treasury_prime/responses/card"
   autoload :Transaction,                "treasury_prime/responses/transaction"
+  autoload :Webhook,                    "treasury_prime/responses/webhook"
 
   autoload :BaseClient,                 "treasury_prime/base_client"
   autoload :Client,                     "treasury_prime/client"

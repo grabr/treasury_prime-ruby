@@ -7,6 +7,7 @@ module TreasuryPrime
     autoload :CardMethods,                  "treasury_prime/client/card_methods"
     autoload :CardProductMethods,           "treasury_prime/client/card_product_methods"
     autoload :TransactionMethods,           "treasury_prime/client/transaction_methods"
+    autoload :WebhookMethods,               "treasury_prime/client/webhook_methods"
 
     include AccountMethods
     include PersonMethods
@@ -15,6 +16,7 @@ module TreasuryPrime
     include AccountApplicationMethods
     include PersonApplicationMethods
     include TransactionMethods
+    include WebhookMethods
 
     include Dry::Monads[:result]
 

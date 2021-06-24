@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sandbox.treasuryprime.com/webhook
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - TreasuryPrime v0.0.1
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic <TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Jun 2021 01:57:37 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '527'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - same-origin
+      Permissions-Policy:
+      - accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(),
+        microphone=(), payment=(), usb=()
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"basic_secret":null,"basic_user":null,"updated_at":"2021-06-23T23:40:09Z","event":"account.update","status":"enabled","id":"wh_11gd7hjs2pemf4","url":"https://42cb1b784395.ngrok.io","error":null,"created_at":"2021-06-23T23:40:09Z","userdata":null},{"basic_secret":null,"basic_user":null,"updated_at":"2021-06-23T23:45:58Z","event":"webhook.create","status":"enabled","id":"wh_11gd7hhe2pema5","url":"https://42cb1b784395.ngrok.io","error":null,"created_at":"2021-06-23T23:39:26Z","userdata":null}],"total_estimated":10}'
+  recorded_at: Thu, 24 Jun 2021 01:57:37 GMT
+recorded_with: VCR 6.0.0
