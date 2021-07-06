@@ -5,6 +5,7 @@ module TreasuryPrime
 
     def initialize(api_base:, username:, token:, headers: {})
       default_headers.merge!(headers)
+
       @conn = Faraday.new(url: api_base, headers: default_headers) do |conn|
         conn.basic_auth(username, token)
         conn.request :json
@@ -26,8 +27,11 @@ module TreasuryPrime
         rescue Faraday::ClientError, Faraday::ServerError => e
           Failure APIConnectionError.faraday_error(e)
         end
+
         payload = handle_response(response)
+
         block.call(payload, response.headers) if block
+
         payload
       end
     end
