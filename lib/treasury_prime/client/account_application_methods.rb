@@ -3,7 +3,10 @@ module TreasuryPrime
     module AccountApplicationMethods
       def create_account_application(person_application_id:, product: :personal_savings)
         wrap_response(AccountApplication) do
-          post("apply/account_application", {primary_person_application_id: person_application_id, product: product})
+          post("apply/account_application", { 
+            primary_person_application_id: person_application_id,
+            product: product
+          })
         end
       end
 

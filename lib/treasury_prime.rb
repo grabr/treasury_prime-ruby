@@ -11,6 +11,8 @@ module TreasuryPrime
   autoload :Types,                      "treasury_prime/types"
   autoload :Request,                    "treasury_prime/request"
 
+  autoload :PaginatedCollection,        "treasury_prime/paginated_collection"
+
   autoload :PersonApplicationRequest,   "treasury_prime/requests/person_application_request"
   autoload :PersonApplication,          "treasury_prime/responses/person_application"
   autoload :AccountApplicationRequest,  "treasury_prime/requests/account_application_request"

@@ -36,7 +36,7 @@ module TreasuryPrime
     def wrap_response(wrapper)
       yield.fmap do |payload|
         if payload["data"] && payload["data"].is_a?(Array)
-          payload["data"].map { |p| wrapper.new(p) }
+          PaginatedCollection.from_payload(payload, wrapper)
         else
           wrapper.new(payload)
         end
