@@ -7,6 +7,6 @@ module TreasuryPrime
     attribute :last_name, Types::String
     attribute :phone_number, Types::String
     attribute :physical_address, Types::Address
-    attribute :tin, Types::String.optional
+    attribute? :tin, Types::String.optional
   end
 end
