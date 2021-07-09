@@ -25,6 +25,8 @@ module TreasuryPrime
   autoload :CardUpdateRequest,          "treasury_prime/requests/card_update_request"
   autoload :CardCreateRequest,          "treasury_prime/requests/card_create_request"
 
+  autoload :CardToken,                  "treasury_prime/responses/card_token"
+
   autoload :Transaction,                "treasury_prime/responses/transaction"
   autoload :Webhook,                    "treasury_prime/responses/webhook"
 

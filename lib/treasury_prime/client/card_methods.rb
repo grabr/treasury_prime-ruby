@@ -22,6 +22,12 @@ module TreasuryPrime
           get("card/#{id}")
         end
       end
+
+      def get_card_token(id:)
+        wrap_response(CardToken) do
+          get("card/#{id}/token")
+        end
+      end
     end
   end
 end
