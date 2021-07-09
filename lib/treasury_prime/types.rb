@@ -10,6 +10,13 @@ module TreasuryPrime
       postal_code: Types::String
     ).with_key_transform(&:to_sym)
 
+    CardStatus = String.enum(
+      'unactivated',
+      'active',
+      'suspended',
+      'terminated'
+    )
+
     Email = String.constrained(format: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
     Currency = String.constrained(eql: "USD")
   end
