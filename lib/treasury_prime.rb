@@ -20,7 +20,13 @@ module TreasuryPrime
   autoload :Account,                    "treasury_prime/responses/account"
   autoload :Person,                     "treasury_prime/responses/person"
   autoload :CardProduct,                "treasury_prime/responses/card_product"
+
   autoload :Card,                       "treasury_prime/responses/card"
+  autoload :CardUpdateRequest,          "treasury_prime/requests/card_update_request"
+  autoload :CardCreateRequest,          "treasury_prime/requests/card_create_request"
+
+  autoload :CardToken,                  "treasury_prime/responses/card_token"
+
   autoload :Transaction,                "treasury_prime/responses/transaction"
   autoload :Webhook,                    "treasury_prime/responses/webhook"
 
